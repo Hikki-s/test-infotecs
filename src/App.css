@@ -1,0 +1,26 @@
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 40px 0 0 0;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.filter-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+select {
+  width: 30%;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+}

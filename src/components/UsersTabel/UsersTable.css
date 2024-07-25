@@ -1,0 +1,91 @@
+.users_table_container {
+    height: 800px;
+    overflow-y: auto;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 0;
+}
+
+.users_table_container::-webkit-scrollbar {
+    display: none;
+}
+
+.th {
+    resize: horizontal;
+    overflow: hidden;
+    cursor: pointer;
+    height: 20px;
+    min-width: 50px;
+
+    border-style:solid;
+    border-width: 1px 2px 3px 1px;
+    border-color: #000000;
+
+    padding: 0;
+
+    background-color: #d7d7d7;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.th p {
+    box-sizing: border-box;
+    line-height: 22px;
+    padding: 8px 0;
+    min-width: 50px;
+}
+
+.td {
+    box-sizing: border-box;
+    border: 1px solid #000;
+    padding: 4px 8px;
+    line-height: 18px;
+}
+
+.tr:last-child .td {
+    border-style:solid;
+    border-width: 1px 1px 2px 1px;
+    border-color: #000000;
+}
+
+.tr {
+    cursor: pointer;
+}
+
+.tr:hover {
+    background-color: #e5e5e5;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный цвет */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Убедитесь, что модальное окно выше других элементов */
+}
+
+.modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Внутренний модальный контент над затемнением */
+}
+
+button {
+    margin-top: 20px;
+}
